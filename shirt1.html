@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirts</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="footer.css">
+    <!-- <link rel="stylesheet" href="home.css"> -->
+
+    <style>
+        .container2 {
+            padding: 20px 150px;
+            margin: 40px 80px;
+            position: relative;
+            top: 10px;
+            left: 12px;
+
+        }
+
+
+        .mainHead {
+            text-align: center;
+        }
+
+        .col-md-3 {
+            border: 1.5px solid rgb(204, 202, 202);
+        }
+
+        img {
+            border-radius: 21px;
+            height: 150px;
+            width: 172px;
+            padding: 5px 0px;
+            margin: 6px 3px;
+        }
+
+        .text {
+            font-size: 14px;
+            font-weight: bold;
+            padding-top: 15px;
+
+        }
+
+        .para {
+            font-size: 8px;
+            margin-top: -5px;
+        }
+
+        .star {
+            margin-top: -5px;
+        }
+
+        .sp1 {
+
+            text-align: left;
+            font-size: 13px;
+            float: left;
+            padding: 15px 0px;
+
+        }
+
+        .sp2 {
+            text-align: right;
+            float: right;
+            padding: 15px 0px;
+        }
+
+        .product-bottom {
+            overflow: auto;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: rgb(13 47 62);
+            height: 35px;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            padding: 3px 3px;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: rgb(13 47 62);
+            border: 2px solid rgb(13 47 62);
+        }
+
+        .button {
+            padding-top: 5px;
+            padding-bottom: 20px;
+        }
+
+        .divLeft {
+            width: 33.3%;
+            float: right;
+
+        }
+
+        .divMiddle {
+            width: 33.3%;
+            float: left;
+        }
+
+        .divRight {
+            width: 33.3%;
+            /* float: right; */
+            margin: 20px auto;
+        }
+
+        .topNav {
+            height: 80px;
+        }
+
+
+        .ShirtPage {
+            background-color: rgb(13 47 62);
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px auto;
+            cursor: pointer;
+
+        }
+
+        .ShirtPage:hover {
+            background-color: white;
+            color: rgb(13 47 62);
+            border: 2px solid rgb(13 47 62);
+        }
+
+        body {
+            text-align: center;
+        }
+
+
+        .button2 {
+            font-size: 12px;
+        }
+
+        .navbar1 {
+            height: 100px;
+            background-color: rgb(13 47 62) !important;
+
+        }
+
+        .navbar-light .navbar-nav .nav-link.active {
+            color: #ffffff;
+        }
+
+        .navbar-light .navbar-nav .nav-link:focus {
+            color: #ffffff;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: rgb(255 255 255 / 70%);
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar-light .navbar-nav .active>.nav-link,
+        .navbar-light {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        .navbar-light .navbar-nav .active>.nav-link:hover,
+        .navbar-light {
+            color: rgb(255 255 255 / 70%);
+        }
+        .container img{
+            filter: invert(39%) sepia(16%) saturate(614%) hue-rotate(156deg) brightness(97%) contrast(89%);
+        }
+
+    
+       
+
+    </style>
+</head>
+
+<body>
+
+    <div class="topNav">
+        <nav class="navbar absolute-top navbar-expand-md navbar-light bg-light navbar1">
+            <div class="container">
+                <a href="./home.html" class="navbar-brand mb-0 h1">
+                    <img class="d-inline-block align-top" src="./goodys-family-clothing.svg" alt="" width="150"
+                        height="30">
+                </a>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="./home.html" class="nav-link active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="./shirt1.html" class="dropdown-item">Shirts</a></li>
+                                <li><a href="./jeans1.html" class="dropdown-item">Jeans</a></li>
+                                <li><a href="./shoes1.html" class="dropdown-item">Shoes</a></li>
+                                <li><a href="./watch1.html" class="dropdown-item">Watches</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="./contact.html" class="nav-link">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="./login1.html" class="nav-link">
+                                Sign In
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="./signup1.html" class="nav-link">
+                                Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    
+    <div class="container2">
+        <hr>
+        <h2 class="mainHead">Shopping</h2>
+        <hr>
+        <div class="col-md-3 divLeft">
+            <div class="product-top">
+                <img src="./shirts/download(1).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="col-md-3 divMiddle">
+            <div class="product-top">
+                <img src="./shirts/download(2).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+            
+        </div>
+
+        <div class="col-md-3 divRight ">
+            <div class="product-top ">
+                <img src="./shirts/download(3).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+            
+        </div>
+
+        <div class="col-md-3 divLeft">
+            <div class="product-top">
+                <img src="./shirts/download(4).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="col-md-3 divMiddle">
+            <div class="product-top">
+                <img src="./shirts/download(5).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+            
+        </div>
+
+        <div class="col-md-3 divRight ">
+            <div class="product-top ">
+                <img src="./shirts/download(6).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+            
+        </div>
+
+        <div class="col-md-3 divLeft">
+            <div class="product-top">
+                <img src="./shirts/download(7).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+             
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="col-md-3 divMiddle">
+            <div class="product-top">
+                <img src="../shirts/download(8).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+             
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+            
+        </div>
+
+        <div class="col-md-3 divRight ">
+            <div class="product-top ">
+                <img src="./shirts/download(9).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+             
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+            
+        </div>
+
+        <div class="col-md-3 divLeft">
+            <div class="product-top">
+                <img src="./shirts/download(10).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="col-md-3 divMiddle">
+            <div class="product-top">
+                <img src="./shirts/download(11).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+            
+        </div>
+
+        <div class="col-md-3 divRight ">
+            <div class="product-top ">
+                <img src="./shirts/download(12).png" alt="">
+            </div>
+            <h3 class="text">Oxford Button-Down Shirt</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur elit.</p>
+
+            <div class="product-bottom text-center star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+               
+                <br>
+                <span class="sp1"><del>Rs. 2500-/</del></span>
+                <b class="sp2">Rs. 1500-/</b>
+
+            </div>
+            <div class="button">
+                <button class="btn">Add to Cart</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container1">
+            <div class="row">
+                <div class="footer-col right">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliae program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col right">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col ">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="./shirt1.html">shirts</a></li>
+                        <li><a href="./jeans1.html">jeans</a></li>
+                        <li><a href="./shoes1.html">shoes</a></li>
+                        <li><a href="./watch1.html">watch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col ">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
